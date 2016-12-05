@@ -3,3 +3,9 @@
 - name: "Test debug task"
   debug:
     msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+- name: "Current folder"
+  cmd: pwd
+  register: myfolder
+- name: "What is my folder"
+  debug:
+    msg: "{{ myfolder }}
