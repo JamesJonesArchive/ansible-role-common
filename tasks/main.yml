@@ -8,4 +8,4 @@
   register: myfolder
 - name: "What is my folder"
   debug:
-    msg: "{{ myfolder }}
+    msg: "{{ myfolder }}"
